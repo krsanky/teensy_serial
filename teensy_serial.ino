@@ -1,16 +1,20 @@
-int ledPin = 13;                 // LED connected to digital pin 13
+/*
+  Blink
+  Turns on an LED on for one second, then off for one second, repeatedly.
+  This example code is in the public domain.
+ */
 
-void setup() {
-  pinMode(ledPin, OUTPUT);      // sets the digital pin as output
-
-  // put your setup code here, to run once:
-  Serial.begin(9600);
+void setup() {                
+	// initialize the digital pin as an output.
+	// Pin 13 has an LED connected on most Arduino boards:
+	pinMode(13, OUTPUT);     
+    Serial.begin(9600);
 }
 
 void loop() {
-  Serial.println("|||+-+-+-+->>>");
-  digitalWrite(ledPin, HIGH);   // sets the LED on
-  delay(1000);                  // waits for a second
-  digitalWrite(ledPin, LOW);    // sets the LED off
-  delay(1000);                  // waits for a second
+    Serial.println("|||+-+-+-+->>> serial [[[[[[[[[[=======]]]]]]]]");
+	digitalWrite(13, HIGH);   // set the LED on
+	delay(1000);              // wait for a second
+	digitalWrite(13, LOW);    // set the LED off
+	delay(1000);              // wait for a second
 }

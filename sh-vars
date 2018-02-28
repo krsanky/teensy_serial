@@ -1,0 +1,7 @@
+export ARDUINO_DIR=/opt/arduino
+export ARDMK_DIR=$HOME/ARDU/Arduino-Makefile 
+export AVR_TOOLS_DIR=/usr/include
+
+# Example of the project's make file:
+# BOARD_TAG     = mega2560
+    
